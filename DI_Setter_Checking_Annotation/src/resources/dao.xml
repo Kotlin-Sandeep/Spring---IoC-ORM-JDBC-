@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+	<bean id = "c" class="beans.DAO">
+		<property name="driver"	value="com.mysql.jdbc.Driver"/>
+		<property name="url"	value="jdbc:mysql://localhost:3390/test"/>
+		<property name="username"	value="root"/>
+		
+	</bean>
+</beans>

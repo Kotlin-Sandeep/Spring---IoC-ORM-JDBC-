@@ -1,0 +1,31 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean  id="s1" class="beans.Student">
+		<property name="rollNo" value="10"/>
+		<property name="name" value="Sandeep Pal"/>
+		<property name="year" value="2014"/>
+	</bean>
+	<bean  id="s2" class="beans.Student">
+		<property name="rollNo" value="20"/>
+		<property name="name" value="Rohit Sharma"/>
+		<property name="year" value="2011"/>
+	</bean>
+	<bean  id="s3" class="beans.Student">
+		<property name="rollNo" value="30"/>
+		<property name="name" value="Sachin Mathur"/>
+		<property name="year" value="2016"/>
+	</bean>
+	
+	<bean id="c" class="beans.College">
+		<property name="collegeName" value="MIT"/>
+		<property name="student">
+			<list>
+				<ref bean="s1"></ref>
+				<ref bean="s2"></ref>
+				<ref bean="s3"></ref>
+			</list>
+		</property>
+	</bean>
+</beans>

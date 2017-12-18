@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="se" class="beans.Student" autowire="byType">
+		<property name="name" value="Sandeep" />
+		<property name="rollNo" value="007" />
+		<property name="marks" value="457.89" />
+	</bean>
+	
+	<bean id="ce" class="beans.College">
+		<property name="name" value="MIT" />
+	</bean>
+	
+</beans>

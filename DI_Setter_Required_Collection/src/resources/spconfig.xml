@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<bean id="tt" class="beans.Test">
+		<property name="book">
+			<util:list list-class="java.util.LinkedList">
+				<value>Complete Reference</value>
+				<value>Head First JAVA</value>
+				<value>Bootstrap for Biggners</value>
+				<value>HTML5 and CSS3 Reference</value>
+			</util:list>
+		</property>
+		<property name="student">
+			<util:set set-class="java.util.TreeSet">
+				<value>Sandeep</value>
+				<value>Rohit</value>
+				<value>Manish</value>
+				<value>Akash</value>
+			</util:set>
+		</property>
+		<property name="course">
+			<util:map map-class="java.util.HashMap">
+				<entry key="JAVA" value="Core, Adv java" />
+				<entry key="Framework" value="Hibernate, Spring" />
+				<entry key="Web Technologies" value="HTML, CSS, JS " />
+			</util:map>
+		</property>
+	</bean>
+</beans>

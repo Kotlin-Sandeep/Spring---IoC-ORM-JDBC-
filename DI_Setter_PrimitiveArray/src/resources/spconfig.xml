@@ -1,0 +1,23 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+<beans>
+	<bean id ="tt" class = "beans.Test">
+		<property name = "name">
+			<list>
+				<value>Sandeep</value>
+				<value>Reshma</value>
+				<value>Manoj</value>
+				<value>Kartik</value>
+			</list>
+		</property>
+		<property name = "marks">
+			<list>
+				<value>450</value>
+				<value>400</value>
+				<value>200</value>
+				<value>290</value>
+			</list>
+		</property>
+	</bean>
+</beans>

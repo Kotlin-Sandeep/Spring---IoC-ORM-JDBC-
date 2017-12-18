@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+<beans>
+	<bean id ="e" class = "beans.Employee">
+		<property name = "email" value = "sandeep_pal@gmail.com"/>
+		<property name = "id" value  ="12"/>
+		<property name = "name" value  ="Sandeep Pal"/>
+		<property name="department" value="Software"/>
+		<property name="mobileNo" value="8149585743"/>
+	</bean>
+</beans>

@@ -1,0 +1,30 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+<beans>
+	<bean id ="tt" class = "beans.Test">
+		<property name = "book">
+			<list>
+				<value>Complete Reference</value>
+				<value>Head First JAVA</value>
+				<value>Bootstrap for Biggners</value>
+				<value>HTML5 and CSS3 Reference</value>
+			</list>
+		</property>
+		<property name = "student">
+			<set>
+				<value>Sandeep</value>
+				<value>Rohit</value>
+				<value>Manish</value>
+				<value>Akash</value>
+			</set>
+		</property>
+		<property name = "course">
+			<map>
+				<entry key="JAVA" value="Core, Adv java"/>
+				<entry key="Framework" value="Hibernate, Spring"/>
+				<entry key="Web Technologies" value="HTML, CSS, JS "/>	
+			</map>
+		</property>
+	</bean>
+</beans>
